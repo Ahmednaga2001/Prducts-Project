@@ -70,12 +70,13 @@ nav {
   padding: 20px 0 !important;
   position: fixed !important;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 100;
   width: 100%;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
 }
-/* nav::after {
+nav::after {
   background-image: url("../images/ripped-paper-header-1.png");
   background-size: cover;
   content: "";
@@ -86,7 +87,7 @@ nav {
   z-index: 5;
   background-repeat: no-repeat;
   height: 16px;
-} */
+}
 
 .nav-links ul {
   margin: 0 auto !important;
@@ -97,7 +98,7 @@ nav {
 .nav-links ul li a {
   font-weight: 700 !important;
   color: #000000 !important;
-  font-size: 18px;
+  font-size: 17px;
 }
 .nav-links ul li a:hover {
   color: var(--thm-base) !important;
@@ -113,28 +114,30 @@ nav {
 }
 .search-inp {
   border-radius: 25px;
-  padding: 12px 10px;
+  width: 200px;
+  padding: 10px 8px;
 }
 .search-inp:focus {
   box-shadow: none !important;
+  border: 1px solid var(--thm-black);
 }
 .navbar-brand img {
   width: 200px;
   height: 100px;
 }
 .dropdown-menu {
-  background-color: #fff;
+  background-color: #ffffffbe;
   border-radius: 10px;
   text-align: center;
-
-  padding: 10px 20px;
+  padding: 15px 30px;
 }
 .dropdown-menu li {
   padding: 0 !important;
   margin: 0 !important;
 }
 .dropdown-item {
-  padding: 0 !important;
+  padding: 5px 15px !important;
+  border-radius: 10px;
 }
 
 /* stard slide */
@@ -142,7 +145,8 @@ nav {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: 480px; /
+  max-height: 480px;
+  margin-top: 150px;
 }
 
 .cover-slides .img1 {
@@ -174,7 +178,6 @@ nav {
   color: #fff;
   font-weight: 700;
   font-size: 45px;
-  
 }
 
 .carousel-caption p {
@@ -189,11 +192,22 @@ nav {
 }
 /* end slide */
 
-
 /* Start Footer */
 .footer {
-  background-color: #191919;
+  background-color: var(--thm-black);
   padding: 70px 0 0;
+  position: relative;
+}
+.footer::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/footer.png');
+    background-size: cover;
+    width: 100%;
+    height: 16px;
+    top: -15px;
+    left: 0;
+    background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .footer {
@@ -219,7 +233,7 @@ nav {
   margin-right: 10px;
 }
 .footer .box .social li a {
-  background-color: #313131;
+  background-color: var(--thm-black2);
   color: #b9b9b9;
   display: inline-flex;
   justify-content: center;
@@ -248,7 +262,7 @@ nav {
   width: 90%;
 }
 .footer .box .links li:not(:last-child) {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--thm-color);
 }
 .footer .box .links li:hover {
   padding-left: 10px;
@@ -303,21 +317,20 @@ nav {
   text-align: center;
   color: white;
   margin: 50px 0 0;
-  border-top: 1px solid #444;
+  background-color: var(--thm-black2);
 }
 /* End Footer */
 
-
-
-.about{
-   background-image: url('../images/rice-plant-sunset-valencia-with-plantation-1.jpg');
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  
+/* style.css */
+.about {
+  margin-top: 150px;
+  background-image: url("../images/rice-plant-sunset-valencia-with-plantation-1.jpg");
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
