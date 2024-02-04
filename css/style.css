@@ -23,11 +23,24 @@
   --thm-text-dark-rgb: 142, 150, 160;
   --main-padding: 50px;
   --main-text: #ffffff8c;
+  --main-transition : .3s
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
+.dropdown-menu-custom {
+  display: none;
+
+
+}
+
+.product-custom:hover .dropdown-menu-custom {
+  display: block;
+ 
+}
+
+
 
 .container-sections {
   display: flex;
@@ -61,11 +74,10 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  transition: var(--main-transition);
 }
 
-.ahmed {
-  height: 100vh;
-}
+/* start navbar */
 nav {
   padding: 20px 0 !important;
   position: fixed !important;
@@ -140,57 +152,9 @@ nav::after {
   border-radius: 10px;
 }
 
-/* stard slide */
-.cover-slides {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-height: 480px;
-  margin-top: 150px;
-}
+/* end navbar */
 
-.cover-slides .img1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../images/banner-01.jpg");
-  min-height: 100vh;
-}
-.cover-slides .img2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../images/banner-02.jpg");
-  min-height: 100vh;
-}
-.cover-slides .img3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../images/banner-03.jpg");
-  min-height: 100vh;
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  max-width: 1000px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.carousel-caption h2 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 45px;
-}
-
-.carousel-caption p {
-  color: var(--main-text);
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  background-color: #000000 !important;
-  color: white !important;
-  padding: 20px;
-}
-/* end slide */
 
 /* Start Footer */
 .footer {
@@ -321,16 +285,14 @@ nav::after {
 }
 /* End Footer */
 
-/* style.css */
-.about {
-  margin-top: 150px;
-  background-image: url("../images/rice-plant-sunset-valencia-with-plantation-1.jpg");
-  height: 400px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
+
+
+
+    
+
+  
+
+
+
+
+
