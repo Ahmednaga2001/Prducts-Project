@@ -284,13 +284,63 @@ nav::after {
   background-color: var(--thm-black2);
 }
 /* End Footer */
+.about-one {
+  margin-top: 150px;
+ 
+  background-image: url("../images/farmer-hand-nurturing-young-baby-plants.jpg");
+  height: 450px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+ 
 
+ 
+}
+.about-one::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 16px;
+  left: 0;
+  bottom: -1px;
+  background-image: url('../images/ripped-paper-slider-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 20;
 
+}
+.about-one h2{
+  font-size: 80px;
+  font-weight: bold;
 
+  padding-top: 15px;
+  font-family: 'Handlee', cursive;
 
-    
+  font-style: italic;
+}
+.about-one .about-one-links a {
+color: var(--thm-black);
+  font-size: 18px;
+  padding-right: 10px;
+}
+.about-one-links a:hover{
+  color: #fff;
+}
+.about-one-links .mark{
+  color: var(--thm-black);
+  background : none;
 
-  
+}
+.about-one-links span{
+  color: var(--thm-black);
+  padding-left: 10px;
+}
 
 
 
