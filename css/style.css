@@ -23,7 +23,7 @@
   --thm-text-dark-rgb: 142, 150, 160;
   --main-padding: 50px;
   --main-text: #ffffff8c;
-  --main-transition : .3s
+  --main-transition: 0.3s;
 }
 
 body {
@@ -31,16 +31,11 @@ body {
 }
 .dropdown-menu-custom {
   display: none;
-
-
 }
 
 .product-custom:hover .dropdown-menu-custom {
   display: block;
- 
 }
-
-
 
 .container-sections {
   display: flex;
@@ -79,7 +74,7 @@ a {
 
 /* start navbar */
 nav {
-  padding: 20px 0 !important;
+  padding: 10px !important;
   position: fixed !important;
   top: 0;
   left: 0;
@@ -154,24 +149,22 @@ nav::after {
 
 /* end navbar */
 
-
-
 /* Start Footer */
 .footer {
   background-color: var(--thm-black);
   padding: 70px 0 0;
   position: relative;
 }
-.footer::before{
-    position: absolute;
-    content: "";
-    background-image: url('../images/footer.png');
-    background-size: cover;
-    width: 100%;
-    height: 16px;
-    top: -15px;
-    left: 0;
-    background-repeat: no-repeat;
+.footer::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/footer.png");
+  background-size: cover;
+  width: 100%;
+  height: 16px;
+  top: -15px;
+  left: 0;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .footer {
@@ -285,8 +278,8 @@ nav::after {
 }
 /* End Footer */
 .about-one {
-  margin-top: 150px;
- 
+  margin-top: 130px;
+
   background-image: url("../images/farmer-hand-nurturing-young-baby-plants.jpg");
   height: 450px;
   width: 100%;
@@ -298,51 +291,147 @@ nav::after {
   justify-content: center;
   color: #fff;
   position: relative;
- 
-
- 
 }
-.about-one::after{
+.about-one::after {
   position: absolute;
   content: "";
   width: 100%;
   height: 16px;
   left: 0;
   bottom: -1px;
-  background-image: url('../images/ripped-paper-slider-2.png');
+  background-image: url("../images/ripped-paper-slider-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 20;
-
 }
-.about-one h2{
-  font-size: 80px;
-  font-weight: bold;
-
+.about-one h2 {
+  font-size: 75px;
   padding-top: 15px;
-  font-family: 'Handlee', cursive;
-
+  font-family: "Handlee", cursive;
   font-style: italic;
 }
 .about-one .about-one-links a {
-color: var(--thm-black);
+  color: var(--thm-black);
   font-size: 18px;
   padding-right: 10px;
 }
-.about-one-links a:hover{
+.about-one-links a:hover {
   color: #fff;
 }
-.about-one-links .mark{
+.about-one-links .mark {
   color: var(--thm-black);
-  background : none;
-
+  background: none;
 }
-.about-one-links span{
+.about-one-links span {
   color: var(--thm-black);
   padding-left: 10px;
 }
 
+/* Strat Products */
+.menu .nav-tabs {
+  border: 0;
+}
+.menu {
+  padding-bottom: var(--main-padding);
+}
+.menu .nav-link {
+  margin: 0 10px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid #b6b6bf;
+}
+.section-header {
+  margin: 50px auto;
+  text-align: center;
+  color: var(--thm-black);
+  font-weight: bold;
+}
 
+@media (max-width: 575px) {
+  .menu .nav-link {
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+}
 
+.menu .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
 
+.menu .nav-link h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--thm-black);
+}
 
+@media (max-width: 575px) {
+  .menu .nav-link h4 {
+    font-size: 16px;
+  }
+}
+
+.menu .nav-link:hover {
+  color: var(--thm-black);
+}
+
+.menu .nav-link.active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.menu .tab-content .tab-header {
+  padding: 30px 0;
+}
+
+.menu .tab-content .tab-header p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #676775;
+  margin-bottom: 0;
+}
+
+.menu .tab-content .tab-header h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--thm-black);
+}
+
+.menu .tab-content .menu-item {
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.menu .tab-content .menu-item .menu-img {
+  padding: 0 60px;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.menu .tab-content .menu-item h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-family: var(--font-secondary);
+  font-weight: 30px;
+  margin-bottom: 5px;
+}
+
+.menu .tab-content .menu-item .ingredients {
+  font-family: var(--thm-black);
+  color: #8d8d9b;
+  margin-bottom: 5px;
+}
+
+.menu .tab-content .menu-item .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--thm-black);
+}
+/* End Products */
