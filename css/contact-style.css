@@ -51,7 +51,6 @@
   .contact-two-right button{
     margin-top: 20px;
     padding: 16px 39px;
-    /* background-color:#025629; */
     background-color: var(--thm-black2);
     text-align: center;
     color: #fff;
