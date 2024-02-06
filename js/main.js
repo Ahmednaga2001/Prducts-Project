@@ -11,47 +11,67 @@ function scroller() {
   
 scroller()  
 
-// Initialize and add the map
-let map;
+let productAction = document.querySelector('.product-action')
+console.log(productAction)
+let dropdownMenu  = document.querySelector('.dropdown-menu ')
 
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+productAction.onclick = function(){
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
-}
 
-initMap();
+  if(dropdownMenu.style.display == 'block'){
+    dropdownMenu.style.display = 'none'
+    dropdownMenu.style.opacity = '0'
+    productAction.innerHTML = '<i class="fa-solid fa-angle-right"></i>';
 
-  /**
-   * Animation on scroll function and init
-   */
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
   }
-  window.addEventListener('load', () => {
-    aos_init();
-  });
+  else{
+    dropdownMenu.style.display = 'block'
+    dropdownMenu.style.opacity = '1'
+    productAction.innerHTML = '<i class="fa-solid fa-angle-down"></i>';
 
 
+  }
+
+
+
+}
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+  // autoplay: {
+  //   delay: 1000 
+  // },
+speed : 2000,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // limitRotation : true,
+  // slideShadows : true,
+  // rotate : 100,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480p
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 2,
+    }
+    ,
+    991 : {
+      slidesPerView: 4,
+
+    }
+  }
+
+
+});
