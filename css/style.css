@@ -74,7 +74,7 @@ a {
 
 /* start navbar */
 nav {
-  padding: 10px !important;
+  padding: 0 !important;
   position: fixed !important;
   top: 0;
   left: 0;
@@ -136,17 +136,19 @@ nav::after {
   background-color: #ffffffbe;
   border-radius: 10px;
   text-align: center;
-  /* padding: 15px 30px; */
 display: none;
 opacity: 0;
 transition: opacity .2s ease;
 }
 
 .drop i {
-  padding: 2px 4px;
+  width: 22px;
+  height: 22px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px; */
   background-color: var(--thm-black);
-  border-radius: 2px;
   color: #fff;
 }
 
@@ -162,6 +164,7 @@ transition: opacity .2s ease;
   display: block;
   opacity: 1;
 }
+
 @media (min-width: 992px) {
   .drop i {
     display: none;
@@ -372,6 +375,8 @@ transition: opacity .2s ease;
   color: var(--thm-black);
   padding-left: 10px;
 }
+
+
 
 
 

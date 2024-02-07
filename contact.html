@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact-style.css" />
-
+    <link rel="stylesheet" href="css/animate.css">
     <!-- map -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
@@ -34,48 +34,54 @@
     <div class="scroller"></div>
 
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light wow bounceInDown" data-wow-duration = "1s" data-wow-delay = ".2s">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg"
-                    alt="logo" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown product-custom">
-                        <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button"
-                            aria-expanded="false">
-                            Our Products
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
+          <a class="navbar-brand" href="#"><img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg"
+              alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown product-custom">
+               <div class="drop d-flex align-items-center">
+                <a id="navbarDropdown"
+                role="button"
+                class="nav-link prodouct-item" href="products.html" >
+                Our Services
+    
+              </a>
+              <span  class="product-action"><i class="fa-solid fa-angle-right"></i></span>
+               </div>
+    
+                <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control search-inp me-2" type="search" placeholder="Search"
-                        aria-label="Search" />
-                    <button class="search-custom"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control search-inp me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="search-custom"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <!-- end navbar -->
 
@@ -107,6 +113,7 @@
                 <!-- contact-two-left  -->
                 <div class="contact-two-right col-lg-6">
                     <div class="row">
+                     <form action="">
                         <div class="col-lg-6">
                             <input type="text" name="" id="" value="" required placeholder="Full Name" />
                         </div>
@@ -125,6 +132,7 @@
                         <div class="col-md-12">
                             <button type="submit">Send Message</button>
                         </div>
+                     </form>
                     </div>
                     <!-- row -->
                 </div>
@@ -179,13 +187,7 @@
 
 
 
-    <!--The div element for the map -->
-    <!-- <div id="map"></div> -->
 
-    <!-- prettier-ignore -->
-    <!-- <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
-            ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script> -->
-    <!-- end map -->
     <!-- Start Footer -->
     <div class="footer">
         <div class="container">
@@ -244,7 +246,10 @@
         <p class="copyright">Made With &lt;3 By Elbalouty</p>
     </div>
     <!-- End Footer -->
-
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

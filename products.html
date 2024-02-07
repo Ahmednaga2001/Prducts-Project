@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/product-style.css" />
+  <link rel="stylesheet" href="css/animate.css">
 
 
   <!-- google fonts -->
@@ -31,7 +32,7 @@
   <div class="scroller"></div>
 
   <!-- start navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light wow bounceInDown" data-wow-duration = "1s" data-wow-delay = ".2s">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg"
           alt="logo" /></a>
@@ -48,12 +49,20 @@
             <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item dropdown product-custom">
-            <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button"
-              aria-expanded="false">
-              Our Products
-            </a>
+           <div class="drop d-flex align-items-center">
+            <a id="navbarDropdown"
+            role="button"
+            class="nav-link prodouct-item" href="products.html" >
+            Our Services
+
+          </a>
+          <span  class="product-action"><i class="fa-solid fa-angle-right"></i></span>
+           </div>
+
             <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
                 <a class="dropdown-item" href="#">Something else here</a>
@@ -492,7 +501,10 @@
     <p class="copyright">Made With &lt;3 By Elbalouty</p>
   </div>
   <!-- End Footer -->
-
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
