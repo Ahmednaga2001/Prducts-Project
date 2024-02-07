@@ -66,11 +66,10 @@
     padding-bottom: var(--main-padding);
   
   }
-  .contact-three .container{
+
+  .contact-three-parent{
     background-color: #F6F5f2;
     padding: 100px 0;
-  
-  
   }
   .contact-three-icon{
     width: 70px;

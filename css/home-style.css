@@ -111,6 +111,8 @@
   background-color: #fff;
   height: 60vh;
   position: relative; /* Add relative positioning to establish a containing block */
+  /* padding-bottom: 150px; */
+
 }
 
 .ah {
@@ -201,10 +203,6 @@
   background-position: bottom right;
   overflow-x: hidden;
 }
-.section-info .container{
-  /* width: 60% !important;
-  margin: auto !important; */
-}
 
 .section-info-content {
   display: flex;
@@ -277,6 +275,7 @@
 .section-info-right-buttons{
   padding-top: 20px;
   display: flex;
+
   justify-content: space-evenly;
 }
 .section-info-right-buttons >a:first-of-type{
@@ -286,6 +285,7 @@
   border-radius: 5px;
   font-weight: bold;
   padding: 16.5px 39.5px;
+
   text-align: center;
 }
 .section-info-right-buttons a:nth-child(2){
@@ -293,40 +293,12 @@
   border-radius: 5px;
   font-weight: bold;
   padding: 16.5px 39.5px;
+
   background-color: #9BC32A;
   color: #000000;
   text-align: center;
 }
-@media (max-width:768px) {
-  .section-info-right >p:first-of-type{
-    padding: 0 20px;
- 
-  }
-  .section-info-right >p:nth-of-type(2){
-     padding: 0 20px;
-  }.section-info-right-trans{
-    display: flex;
-    flex-direction: column;
-  }
-  .section-info-right-trans div:nth-child(2){
-    margin-top: 20px;
-  }
-  .section-info-right-buttons{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- 
-  }
-  .section-info-right-buttons a:nth-child(2){
-    margin-top: 20px;
-  }
-  .section-info-right{
-            padding-right: 40px;
-  }
 
-  
-}
 
 
 
@@ -336,9 +308,6 @@
     margin-top: 20px;
     max-width: 90%;
     padding: 80px 50px;
-
-
- 
   }
   .section-info-left{
     display: flex;
@@ -354,6 +323,35 @@
     justify-content: center;
     align-items: center;
   }
+  
+}
+@media (max-width:768px) {
+  .section-info-right{
+    padding: 80px 10px;
+  
+  }
+  .section-info-right-trans{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-info-right-trans div:nth-child(2){
+    margin-top: 20px;
+  }
+  .section-info-right-buttons{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-info-right-buttons a:nth-child(2){
+    margin-top: 20px;
+  }
+  .section-info-right-buttons a{
+
+
+  }
+ 
+
   
 }
 
@@ -444,8 +442,8 @@ justify-content: center;
 align-items: center;
 }
 .home-contact-left img{
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
   border-radius: 50%;
 
 }
