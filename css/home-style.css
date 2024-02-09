@@ -107,7 +107,7 @@
 /* End Landing Section */
 /* end slide */
 .section-cards {
-  padding: 50px 0;
+  padding-bottom: 50px;
   width: 100%;
   background-color: #fff;
   position: relative; /* Add relative positioning to establish a containing block */
@@ -134,9 +134,9 @@
   transform: rotate(180deg);
 } */
 
-.all-cards {
-  /* padding-top: 150px; */
-}
+/* .all-cards {
+  padding-top: 150px;
+} */
 
 .box {
   position: relative; 
@@ -184,10 +184,17 @@
 @media (max-width:991px) {
   .section-cards{
     background-color: #F9B656;
+    padding: 50px 0 85px 0;
+
+
   }
+
  
-  .box{
+  .box:not(:last-child){
     margin-bottom: 80px;
+  }
+  .all-cards {
+    /* padding: 20px 0; */
   }
   
 }
