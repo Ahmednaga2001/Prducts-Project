@@ -107,15 +107,15 @@
 /* End Landing Section */
 /* end slide */
 .section-cards {
+  padding: 50px 0;
   width: 100%;
   background-color: #fff;
-  height: 60vh;
   position: relative; /* Add relative positioning to establish a containing block */
   /* padding-bottom: 150px; */
 
 }
 
-.ah {
+/* .ah {
   height: 40vh;
   background-color: #F9B656;
   position: relative;
@@ -132,10 +132,10 @@
   left: 0;
   z-index: 10;
   transform: rotate(180deg);
-}
+} */
 
 .all-cards {
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 
 .box {
@@ -183,13 +183,9 @@
 
 @media (max-width:991px) {
   .section-cards{
-    height: auto;
     background-color: #F9B656;
   }
-  .ah{
-    height: auto;
-    
-  }
+ 
   .box{
     margin-bottom: 80px;
   }
