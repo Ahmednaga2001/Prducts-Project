@@ -1,234 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
 
-  <!-- font awesom library -->
-  <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
 
-  <!-- render all elements normally -->
-  <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
 
-  <!-- css styling -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/about-style.css" />
-  <link rel="stylesheet" href="css/animate.css">
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/about.css" />
 </head>
 
 <body>
-  <div class="scroller"></div>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
 
-  <!-- start navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light wow bounceInDown" data-wow-duration = "1s" data-wow-delay = ".2s">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg"
-          alt="logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item dropdown product-custom">
-           <div class="drop d-flex align-items-center">
-            <a id="navbarDropdown"
-            role="button"
-            class="nav-link prodouct-item" href="products.html" >
-            Our Services
-
-          </a>
-          <span  class="product-action"><i class="fa-solid fa-angle-right"></i></span>
-           </div>
-
-            <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="#">Shop Details</a></li>
+                        <li><a href="#">Shoping Cart</a></li>
+                        <li><a href="#">Check Out</a></li>
+                        <li><a href="#">Blog Details</a></li>
+                        <li><a href="#">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control search-inp me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="search-custom"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+            </ul>
+        </div>
     </div>
-  </nav>
+    <!-- Humberger End -->
 
-  <!-- end navbar -->
-
-  <div class="about-one">
-    <div class="about-one-links">
-      <a href="index.html">Home</a>
-      <span class="mark">/</span>
-      <span>About Us</span>
-    </div>
-    <h2>About Us</h2>
-  </div>
-  <!-- about-one -->
-
-  <div class="about-intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-1 about-intro-img wow slideInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
-          <img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg" alt="logo" />
-        </div>
-        
-        <div class="col-lg-6 mb-1 mx-auto">
-          <span>GET TO KNOW US</span>
-          <h3>AGRIA INDUSTRY</h3>
-          <p>
-            Agria is a limited liability company specialized in the production
-            of all types of fertilizers and phytosanitary products in Algeria
-          </p>
-          <p>
-            Our company stands out thanks to its know-how, and its team of
-            engineers and specialists who have many years of experience in the
-            field.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-two">
-    <div class="container">
-      <div class="row">
-        <div class="about-two-left col-md-6 mb-1">
-          <p>
-            <b>Company Vision:</b>
-            Our company’s mission is to become a manufacturing leader in the
-            agricultural industry, providing high-quality fertilizers and
-            innovative agronomic solutions to support sustainable agriculture.
-            By helping farmers increase their productivity while preserving
-            natural resources and minimizing environmental impact, We work on
-            Constant innovation, sustainability, quality and customer
-            satisfaction are our priorities while remaining an ethical and
-            responsible in the agricultural products production sector.
-          </p>
-          <p>
-            Quality and implemented system for environmental protection: We
-            are committed to using sustainable raw materials and minimizing
-            waste and emissions during fertilizer production.
-          </p>
-          <p>
-            <b>Company added value:</b>
-            Our ultimate goal is to produce high-quality fertilizers while
-            contributing positively to the preservation of the environment and
-            the promotion of sustainable agriculture.
-          </p>
-        </div>
-        <!-- about-two-left -->
-        <div class="about-two-right col-md-6 mb-1">
-          <img src="images/about-ai.jpg" alt="about img" />
-        </div>
-        <!-- about-two-right -->
-      </div>
-      <!-- row -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- about-two -->
-  <div class="about-three">
-    <div class="about-three-overlay">
-      <h3>
-        We try to be ever closer to the farmer and provide them with the best
-        solutions for healthy and sustainable agriculture.
-      </h3>
-      <a href="">Discover OUR CATALOG</a>
-    </div>
-  </div>
-
-  <!-- Start Footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="box col-lg-4">
-          <h3>Elbalouty</h3>
-          <ul class="social">
-            <li>
-              <a href="#" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="youtube">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-          <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Temporibus nulla rem, dignissimos iste aspernatur
-          </p>
-        </div>
-        <div class="box col-lg-4">
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Our Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="box col-lg-4">
-          <div class="line">
-            <i class="fas fa-map-marker-alt fa-fw"></i>
-            <div class="info">Egypt, Mansoura, Street Number 220</div>
-          </div>
-          <div class="line">
-            <i class="far fa-clock fa-fw"></i>
-            <div class="info">Business Hours: From 10:00 To 18:00</div>
-          </div>
-          <div class="line">
-            <i class="fas fa-phone-volume fa-fw"></i>
-            <div class="info">
-              <span class="d-block">+20123456789</span>
-              <span class="d-block">+20198765432</span>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">
+                                    Our Services
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="#">Shop Details</a></li>
+                                    <li><a href="#">Shoping Cart</a></li>
+                                    <li><a href="#">Check Out</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-search">
+                        <form class="">
+                            <input class=" form-control search-input me-2" type="search" placeholder="Search"
+                                aria-label="Search" />
+                            <button class="search-custom"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
-      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Start About One Section -->
+    <div class="about-one">
+        <div class="about-one-links">
+            <a href="index.html">Home</a>
+            <span class="mark">/</span>
+            <span>About Us</span>
+        </div>
+        <h2>About Us</h2>
     </div>
-    <p class="copyright">Made With &lt;3 By Elbalouty</p>
-  </div>
-  <!-- End Footer -->
-  <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+    <!-- End About One Section -->
+
+    <!-- Start Intro Section -->
+    <div class="about-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-1 about-intro-img wow slideInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
+                    <img src="images/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg" alt="logo" />
+                </div>
+
+                <div class="col-lg-6 mb-1 mx-auto">
+                    <span>GET TO KNOW US</span>
+                    <h3>AGRIA INDUSTRY</h3>
+                    <p>
+                        Agria is a limited liability company specialized in the production
+                        of all types of fertilizers and phytosanitary products in Algeria
+                    </p>
+                    <p>
+                        Our company stands out thanks to its know-how, and its team of
+                        engineers and specialists who have many years of experience in the
+                        field.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Intro Section -->
+
+    <!-- Start About Two Section -->
+    <div class="about-two">
+        <div class="container">
+            <div class="row">
+                <div class="about-two-left col-md-6 mb-1">
+                    <p>
+                        <b>Company Vision:</b>
+                        Our company’s mission is to become a manufacturing leader in the
+                        agricultural industry, providing high-quality fertilizers and
+                        innovative agronomic solutions to support sustainable agriculture.
+                        By helping farmers increase their productivity while preserving
+                        natural resources and minimizing environmental impact, We work on
+                        Constant innovation, sustainability, quality and customer
+                        satisfaction are our priorities while remaining an ethical and
+                        responsible in the agricultural products production sector.
+                    </p>
+                    <p>
+                        Quality and implemented system for environmental protection: We
+                        are committed to using sustainable raw materials and minimizing
+                        waste and emissions during fertilizer production.
+                    </p>
+                    <p>
+                        <b>Company added value:</b>
+                        Our ultimate goal is to produce high-quality fertilizers while
+                        contributing positively to the preservation of the environment and
+                        the promotion of sustainable agriculture.
+                    </p>
+                </div>
+                <div class="about-two-right col-md-6 mb-1">
+                    <img src="images/about-ai.jpg" alt="about img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start About Three Section -->
+
+    <!-- Start About Three Section -->
+    <div class="about-three">
+        <div class="about-three-overlay">
+            <h3>
+                We try to be ever closer to the farmer and provide them with the best
+                solutions for healthy and sustainable agriculture.
+            </h3>
+            <a href="">Discover OUR CATALOG</a>
+        </div>
+    </div>
+    <!-- End About Three Section -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="box col-lg-4">
+                    <h3>Elbalouty</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Temporibus nulla rem, dignissimos iste aspernatur
+                    </p>
+                </div>
+                <div class="box col-lg-4">
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="box col-lg-4">
+                    <div class="line">
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        <div class="info">Egypt, Mansoura, Street Number 220</div>
+                    </div>
+                    <div class="line">
+                        <i class="far fa-clock fa-fw"></i>
+                        <div class="info">Business Hours: From 10:00 To 18:00</div>
+                    </div>
+                    <div class="line">
+                        <i class="fas fa-phone-volume fa-fw"></i>
+                        <div class="info">
+                            <span class="d-block">+20123456789</span>
+                            <span class="d-block">+20198765432</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Made With Love By Ahmed Elbalouty</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- <script src="js/mixitup.min.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

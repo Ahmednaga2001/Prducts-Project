@@ -1,77 +1,95 @@
-function scroller() {
-    let scroller = document.querySelector(".scroller");
-    let height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    window.addEventListener("scroll", () => {
-      let scrollTop = document.documentElement.scrollTop;
-      scroller.style.width = `${(scrollTop / height) * 100}%`;
+'use strict';
+
+(function ($) {
+
+    /*------------------
+        Preloader
+    --------------------*/
+    $(window).on('load', function () {
+        $(".loader").fadeOut();
+        $("#preloder").delay(200).fadeOut("slow");
+
+        /*------------------
+            Gallery filter
+        --------------------*/
+        $('.featured__controls li').on('click', function () {
+            $('.featured__controls li').removeClass('active');
+            $(this).addClass('active');
+        });
+        if ($('.featured__filter').length > 0) {
+            var containerEl = document.querySelector('.featured__filter');
+            var mixer = mixitup(containerEl);
+        }
     });
-  }
-  
-scroller()  
 
-let productAction = document.querySelector('.product-action')
-console.log(productAction)
-let dropdownMenu  = document.querySelector('.dropdown-menu ')
+    /*------------------
+        Background Set
+    --------------------*/
+    $('.set-bg').each(function () {
+        var bg = $(this).data('setbg');
+        $(this).css('background-image', 'url(' + bg + ')');
+    });
 
-productAction.onclick = function(){
+    // Humberger Menu
+    $(".humberger__open").on('click', function () {
+        $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
+        $(".humberger__menu__overlay").addClass("active");
+        $("body").addClass("over_hid");
+    });
+
+    $(".humberger__menu__overlay").on('click', function () {
+        $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
+        $(".humberger__menu__overlay").removeClass("active");
+        $("body").removeClass("over_hid");
+    });
+
+    /*------------------
+		Navigation
+	--------------------*/
+    $(".mobile-menu").slicknav({
+        prependTo: '#mobile-menu-wrap',
+        allowParentLinks: true
+    });
+
+    /*-----------------------
+        Categories Slider
+    ------------------------*/
+    $(".categories__slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 4,
+        dots: false,
+        nav: true,
+        navText: ["<span class='fa fa-angle-left'><span/>", "<span class='fa fa-angle-right'><span/>"],
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        responsive: {
+
+            0: {
+                items: 1,
+            },
+
+            480: {
+                items: 2,
+            },
+
+            768: {
+                items: 3,
+            },
+
+            992: {
+                items: 4,
+            }
+        }
+    });
 
 
+    $('.hero__categories__all').on('click', function(){
+        $('.hero__categories ul').slideToggle(400);
+    });
 
-  if(dropdownMenu.style.display == 'block'){
-    dropdownMenu.style.display = 'none'
-    dropdownMenu.style.opacity = '0'
-    productAction.innerHTML = '<i class="fa-solid fa-angle-right"></i>';
+})(jQuery);
 
-  }
-  else{
-    dropdownMenu.style.display = 'block'
-    dropdownMenu.style.opacity = '1'
-    productAction.innerHTML = '<i class="fa-solid fa-angle-down"></i>';
-
-
-  }
-
-
-
-}
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-
-  loop: true,
-  // autoplay: {
-  //   delay: 1000 
-  // },
-speed : 1000,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // limitRotation : true,
-  // slideShadows : true,
-  // rotate : 100,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    0: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 480p
-    // when window width is >= 640px
-    768: {
-      slidesPerView: 2,
-    }
-    ,
-    991 : {
-      slidesPerView: 4,
-
-    }
-  }
-
-
-});
