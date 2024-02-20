@@ -10,7 +10,7 @@
   --primary-color: #efb443;
   --special-color: #5366c2;
   --main-color: #09b189;
-  --sec-color: #1f4e3d;
+  --sec-color:#0d8a6d;
   --text-dark: #8e96a0;
   --main-padding: 50px;
   --main-text: #ffffff8c;
@@ -182,7 +182,7 @@ a:hover {
   padding: 5px 15px;
 }
 .header__menu ul li.active a {
-  color: #7fad39;
+  color: #3d8048;
 }
 .header__menu ul li:hover .header__menu__dropdown {
   top: 30px;
@@ -190,11 +190,11 @@ a:hover {
   visibility: visible;
 }
 .header__menu ul li:hover > a {
-  color: #7fad39;
+  color: #3d8048 ;
 }
 .header__menu ul li a {
   font-size: 14px;
-  color: #252525;
+  color: #252525 ;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -338,7 +338,7 @@ a:hover {
     -webkit-border-radius: 0;
     border-radius: 0;
     background: transparent;
-    color: #7fad39;
+    color: #3d8048;
   }
   .humberger__menu__wrapper .slicknav_nav .slicknav_row,
   .humberger__menu__wrapper .slicknav_nav a {
@@ -466,7 +466,7 @@ a:hover {
     -webkit-border-radius: 0;
     border-radius: 0;
     background: transparent;
-    color: #7fad39;
+    color:#3d8048;
   }
   .humberger__menu__wrapper .slicknav_nav .slicknav_row,
   .humberger__menu__wrapper .slicknav_nav a {
@@ -522,14 +522,14 @@ header form {
 }
 .search-custom {
   border: none;
-  color: green;
+  color: var(--main-color);
   outline: none;
   background: none;
   position: absolute;
   right: 8px;
   top: 50%;
   transform: translateY(-50%);
-  border-left: 1px solid green;
+  border-left: 1px solid var(--main-color);
   padding-left: 6px;
   height: 75%;
 }
@@ -592,7 +592,7 @@ header form {
   margin-right: 10px;
 }
 .footer .box .social li a {
-  background-color: var(--sec-color);
+  background-color: var(--gray-color);
   color: #b9b9b9;
   display: inline-flex;
   justify-content: center;
@@ -613,7 +613,7 @@ header form {
 }
 .footer .box .text {
   line-height: 2;
-  color: #b9b9b9;
+  color: var(--gray-color);
 }
 .footer .box .links li {
   padding: 15px 0;
@@ -633,7 +633,7 @@ header form {
   color: white;
 }
 .footer .box .links li a {
-  color: #b9b9b9;
+  color: var(--gray-color);
   transition: 0.5s;
 }
 @media (max-width: 991px) {
@@ -657,7 +657,7 @@ header form {
 .footer .box .line {
   display: flex;
   align-items: center;
-  color: #b9b9b9;
+  color: var(--gray-color);
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
@@ -688,7 +688,7 @@ header form {
 .footer .copyright {
   padding: 25px 0;
   text-align: center;
-  color: white;
+  color: #fff;
   margin: 50px 0 0;
   background-color: var(--sec-color);
 }

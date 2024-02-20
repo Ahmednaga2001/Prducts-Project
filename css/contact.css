@@ -1,19 +1,19 @@
-:root {
+/* :root {
   --gray-color: #313e49;
   --base-color: #49a760;
   --primary-color: #efb443;
   --special-color: #5366c2;
   --main-color: #09b189;
-  --sec-color: #1f4e3d;
+  --sec-color:#0d8a6d;
   --text-dark: #8e96a0;
   --main-padding: 50px;
   --main-text: #ffffff8c;
   --main-transition: 0.3s;
-}
+} */
 /* Start Contact One Section */
 .contact-one {
   margin-top: 86px;
-  background-image: url("../images/farmer-hand-nurturing-young-baby-plants.jpg");
+  background-image: url("../ASSETS/farmer-hand-nurturing-young-baby-plants.jpg");
   height: 450px;
   width: 100%;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
   font-style: italic;
 }
 .contact-one .contact-one-links a {
-  color: #fff;
+  color: var(--main-color);
   font-size: 18px;
   padding-right: 10px;
 }
@@ -49,7 +49,9 @@
 }
 .contact-one-links span {
   padding-left: 10px;
+  color: var(--main-color);
 }
+
 /* End Contact One Section */
 
 /* Start Contact Two Section */
@@ -62,7 +64,6 @@
   }
   .contact-two-left-img img{
     width: 108px;
-    height: 62px;
   }
   .contact-two-left-img span{
     color: #949494;
@@ -75,7 +76,7 @@
     padding-top: 20px;
   }
   .contact-two-left p{
-    color: var(--main-color);
+    color: var(--gray-color);
     font-weight: 500px;
     padding-top: 20px;
     line-height: 30px;
@@ -92,13 +93,13 @@
     resize: none;
   }
   .contact-two-right input:focus , textarea:focus{
-    border: 1px solid var(--sec-color); 
+    border: 1px solid var(--main-color); 
     outline: none;
   }
   .contact-two-right button{
     margin-top: 20px;
     padding: 16px 39px;
-    background-color: var(--sec-color);
+    background-color: var(--main-color);
     text-align: center;
     color: #fff;
     font-size: 18px;
@@ -106,7 +107,7 @@
     border: none;
   }
   .contact-two-right button:hover{
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
   }
   /* End Contact Two Section */
 
@@ -122,14 +123,14 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #025629;
+    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .contact-three-icon i{
     font-size: 35px;
-    color: #fff;
+    color:#fff;
   }
   .contact-three h3{
     padding-top: 15px;
@@ -139,7 +140,7 @@
   }
   .contact-three p{
     padding-top: 10px;
-    color: #363636;
+    color: var(--gray-color);
     line-height: 30px;
   }
   .contact-card{
